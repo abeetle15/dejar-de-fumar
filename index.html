@@ -91,6 +91,39 @@
   opacity: 1;
   box-shadow: 4px 3px 20px rgba(154, 52, 52, 0.794);
   }
+
+  .estrofa-1 {
+      color: purple;
+    }
+
+  .estrofa-2 {
+    color:teal
+    }
+  
+  .estrofa-1,
+  .estrofa-2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  
+  .subsection.header {
+  color: red;
+}
+
+  .subsection#preview {
+  color: blue;
+}
+
+.ancestor .contents {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(238, 163, 13);
+  color: rgb(118, 255, 143);
+}
+
+#bleh {
+  background-color: blueviolet;
+  color: aqua;
+}
+
   </style>
 
 </head>
@@ -116,7 +149,65 @@
 <button class="boton-no">
   no lo se...
 </button>
-  
+
+<p class="estrofa-1">
+  No puedo verte triste porque me mata
+</p>
+<p class="estrofa-1">
+  Tu carita de pena mi dulce amor
+</p>
+<p class="estrofa-1">
+  Me duele tanto el llanto que tu derramas
+</p>
+<p class="estrofa-1">
+  Que se llena de angustia mi corazón
+</p>
+
+<p class="estrofa-2">
+  Yo sufro lo indecible si tu entristeces
+</p>
+<p class="estrofa-2">
+  No quiero que la duda te haga llorar
+</p>
+<p class="estrofa-2">
+  Hemos jurado amarnos hasta la muerte
+</p>
+<p class="estrofa-2">
+  Y si los muertos aman,
+</p>
+<p class="estrofa-2">
+  Después de muertos amarnos mas
+</p>
+
+<!-- <div> es un contenedor vacio. 
+  como cualquier elemento como <p> o <h1>-->
+<div>
+  <div class="subsection header">Latest Posts</div>
+  <p class="subsection" id="preview">
+    This is where a preview for a post might go.
+  </p>
+</div>
+<!--este ejemplo es solo para demostrar que se puede tener 
+  clases que comparten palabras en el nombre y que usando el
+selector con punto seguido y # puedes diferenciar. no se para
+que putas usarias eso pero bue. en la linea 108 ven el css -->
+
+<div class="ancestor" id="bleh">
+  Ódiame por piedad yo te lo pido
+  <div class="contents">
+    Ódiame sin medida ni clemencia
+    <div class="contents">
+      Odio quiero más que indiferencia
+    </div>
+  </div>
+</div>
+
+<div class="contents" id="bleh">
+  Porque el rencor quiere menos que el olvido
+</div>
+
+
+
 </body>
 
 </html>
